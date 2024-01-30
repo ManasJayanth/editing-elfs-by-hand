@@ -4,7 +4,7 @@ ELF (Executable and Linkable Format) files are the backbone of executables and s
 
 # Progress
 
-Doesn't work.
+Not there yet.
 
 ```
 $ strace ./hello_lib.so 
@@ -71,6 +71,12 @@ The goal is to manually add an interp segment to a shared library that initially
 
 - **Byte Ordering:** Pay close attention to little-endian byte ordering when editing values directly.
 - **Tools for Handling ELF Files:** While manual editing is possible, consider using libraries like `libelf` for more complex tasks.
+
+## How did it all start?
+
+This tweet
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Today I learnt, while examining the ELF headers of an OCaml program (and likely, for any other language using gcc) we have been building shared libraries :D Not executables!<br><br>readelf displays Type as DYN <a href="https://t.co/WJSoC73AtT">pic.twitter.com/WJSoC73AtT</a></p>&mdash; prometheansacrifice (@ManasJayanth) <a href="https://twitter.com/ManasJayanth/status/1751259054494626268?ref_src=twsrc%5Etfw">January 27, 2024</a></blockquote> 
+
 
 ## Conclusion
 
