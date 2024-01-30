@@ -1,0 +1,9 @@
+*.hex
+*.so
+*.txt
+*.segment
+*.bin
+hello_c
+hello_lib.so
+*.data
+*.aout
